@@ -76,6 +76,7 @@ GEM
       mutex_m
       tzinfo (~> 2.0)
     base64 (0.2.0)
+    bcrypt (3.1.20)
     bigdecimal (3.1.5)
     bootsnap (1.17.1)
       msgpack (~> 1.2)
@@ -123,6 +124,7 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
+    pg (1.5.4)
     psych (5.1.2)
       stringio
     puma (6.4.2)
@@ -187,8 +189,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   debug
+  pg
   puma (>= 5.0)
   rails (~> 7.1.2)
   sqlite3 (~> 1.4)
